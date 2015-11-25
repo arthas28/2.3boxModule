@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+/*设置标题样式*/
+.title{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+/*标准盒子最外层div*/
+.ordinary{
+    width: 130px;
+    height: 130px;
+    margin: 50px auto;
+    background-color: aquamarine;
+}
+/*标准盒，根据鞋子定义盒子大小*/
+.ordinary_xiehe{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid red;
+    background-color: orange;
+}
+/*鞋子div*/
+.ordinary_xiezi{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    font-weight: bolder;
+    font-size: 36px;
+    text-align: center;
+    overflow: scroll;
+}
+/*怪异盒最外层div*/
+.strange{
+    width: 130px;
+    height: 130px;
+    margin: 50px auto;
+    background-color: aquamarine;
+}
+/*怪异盒，先定义盒子大小，再放鞋子*/
+.strange_xiehe{
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    border: 5px solid red;
+    background-color: orange;
+    box-sizing: border-box;
+}
+.strange_xiezi{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    font-weight: bolder;
+    font-size: 36px;
+    text-align: center;
+    overflow: scroll;
+}
+/*弹性盒模型*/
+.elastic{
+    -webkit-column-count: 3;
+    -webkit-column-rule-style: dotted;
+    margin: 20px 20px;
+    background-color: beige;
+    border: 2px solid gray;
+    padding: 5px;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px 1px black inset;
+}
+/*伸缩盒模型*/
+.flex{
+    display: flex;
+    width: 500px;
+    background-color: yellow;
+}
+.flex_first{
+    height: 100px;
+    background-color: red;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+}
+.flex_second{
+    height: 100px;
+    background-color: green;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+}
+.flex_third{
+    height: 200px;
+    background-color: blue;
+    -webkit-flex: 1;
+    -webkit-order: 2;
+}
